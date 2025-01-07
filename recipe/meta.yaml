@@ -10,7 +10,7 @@ source:
   sha256: f99b5b8ae62703d1b36308afaa5908396c6c3a8dd033bd4a6b804af955adec74
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - fdsnsourceid = simplemseed.fdsnsourceid:main
     - mseed3details = simplemseed.mseed3details:main
@@ -21,11 +21,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - hatchling >=1.21.0
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - crc32c
     - numpy <2.0dev0
     - jsonpointer
@@ -43,6 +43,7 @@ test:
     - mseed2to3 --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/crotwell/simplemseed
