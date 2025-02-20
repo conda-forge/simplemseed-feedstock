@@ -7,7 +7,7 @@ from simplemseed import MSeed3Header, MSeed3Record, FDSNSourceId, readMSeed3Reco
 
 
 data = [(i % 99 - 49) for i in range(0, 1002)]
-starttime = "2024-01-01T15:13:55.123456+0000"
+starttime = "2024-01-01T15:13:55.123456+00:00"
 sampling_rate = 20.0
 
 header = MSeed3Header()
