@@ -1,5 +1,5 @@
 {% set name = "simplemseed" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 51c3fec111ce5fb4fc706bee7dbbca5cbde9796cee0af0eb1a45bff7a04176eb
+  sha256: 194386d541b58d339b54167b015fe95854d9e3c0c0a8be2dd0e3f20695f10116
 
 build:
   number: 0
